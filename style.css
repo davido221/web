@@ -25,3 +25,10 @@ li.pd a:hover:not(.active) {
 .active {
   background-color:  #04AA6D;
 }
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: grey;
+  color: yellow;
+}
