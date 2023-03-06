@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz tétel számolás</title>
+</head>
+<body>
+    
+    <h1>Pitagorasz tétel számolás</h1>
+    <img src="Pitagorasz-tetel-300x222.jpg" alt="">
+
+    <p>Adj meg legalább két oldalt</p>
+    <form>
+        <p><input type="text" id="a" oninput="szam1()"> a. oldal</p>
+        <p><input type="text" id="b" oninput="szam1()"> b. oldal</p>
+        <p><input type="text" id="c" oninput="szam1()"> c. oldal</p>
+    </form>
+
+    
+
+    <script>
+        function szam1() {
+            if (a.value != 0 && b.value != 0) {
+                c.value = Math.sqrt((a.value * a.value) + (b.value * b.value));
+            }
+            if (a.value != 0 && c.value != 0) {
+                b.value = Math.sqrt((a.value * a.value) + (c.value * c.value));
+            }
+        }
+    </script>
+</body>
+</html>
